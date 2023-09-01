@@ -1,0 +1,392 @@
+* {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Lato";
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+header {
+  margin-top: 3vw;
+  width: 100vw;
+  /* padding: 1vw; */
+  background-color: transparent;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-left: 4vw;
+  background-color: transparent;
+}
+#ma {
+  display: flex;
+  margin-right: auto;
+  margin-left: 30px;
+  align-items: center;
+}
+img {
+  width: 5vw;
+  height: 5vw;
+  margin-right: 10px;
+}
+#blob {
+  fill: #f00;
+  filter: drop-shadow(10px 10px 140px rgba(255, 0, 0, 0.4))
+    drop-shadow(-10px -10px 140px rgba(255, 0, 0, 0.4));
+}
+#main-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 1.3rem;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-right: 8vw;
+}
+li {
+  list-style: none;
+  padding-left: 30px;
+  background-color: transparent;
+  font-size: 1rem;
+}
+#signup {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: black;
+  background-color: #e8a970;
+  height: 5vh;
+  width: 6vw;
+  z-index: 1;
+  border: 1px solid transparent;
+  border-radius: 0.4vw;
+  margin-left: 30px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+svg {
+  z-index: 0;
+  position: relative;
+  background-color: transparent;
+  float: right;
+  margin-top: -8vw;
+  max-width: 100%;
+  overflow: hidden;
+}
+strong {
+  font-size: 2rem;
+  animation: change 15s step-end infinite;
+  &::before {
+    color: #ff0000;
+    content: "";
+    animation: change 15s step-end infinite;
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 0.1em;
+    height: 0.75em;
+    margin-left: 0.1em;
+    background-color: #fff;
+    animation: blink 0.75s ease-in-out infinite;
+  }
+}
+@keyframes blink {
+  0%,
+  25%,
+  100% {
+    opacity: 1;
+  }
+  50%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes change {
+  0% {
+    content: "";
+  }
+  5% {
+    content: "S";
+  }
+  8% {
+    content: "St";
+  }
+  11% {
+    content: "Stu";
+  }
+  14% {
+    content: "Stud";
+  }
+  17% {
+    content: "Stude";
+  }
+  20% {
+    content: "Studen";
+  }
+  22% {
+    content: "Student";
+  }
+  24% {
+    content: "Students";
+  }
+  26% {
+    content: "Student";
+  }
+  28% {
+    content: "Studen";
+  }
+  30% {
+    content: "Stude";
+  }
+  32% {
+    content: "Stud";
+  }
+  34% {
+    content: "Stu";
+  }
+  36% {
+    content: "St";
+  }
+  38% {
+    content: "S";
+  }
+  40% {
+    content: "";
+  }
+  43% {
+    content: "L";
+  }
+  45% {
+    content: "Le";
+  }
+  47% {
+    content: "Lea";
+  }
+  49% {
+    content: "Lear";
+  }
+  51% {
+    content: "Learn";
+  }
+  53% {
+    content: "Learne";
+  }
+  55% {
+    content: "Learner";
+  }
+  57% {
+    content: "Learners";
+  }
+  59% {
+    content: "Learner";
+  }
+  61% {
+    content: "Learne";
+  }
+  63% {
+    content: "Learn";
+  }
+  65% {
+    content: "Lear";
+  }
+  67% {
+    content: "Lea";
+  }
+  69% {
+    content: "Le";
+  }
+  71% {
+    content: "L";
+  }
+  73% {
+    content: "";
+  }
+  75% {
+    content: "T";
+  }
+  77% {
+    content: "Te";
+  }
+  79% {
+    content: "Tea";
+  }
+  81% {
+    content: "Teac";
+  }
+  83% {
+    content: "Teach";
+  }
+  85% {
+    content: "Teache";
+  }
+  87% {
+    content: "Teacher";
+  }
+  89% {
+    content: "Teachers";
+  }
+  91% {
+    content: "Teacher";
+  }
+  92% {
+    content: "Teache";
+  }
+  93% {
+    content: "Teach";
+  }
+  95% {
+    content: "Teac";
+  }
+  97% {
+    content: "Tea";
+  }
+  98% {
+    content: "Te";
+  }
+  99% {
+    content: "T";
+  }
+  100% {
+    content: "";
+  }
+}
+#section-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10vw;
+  margin-top: 5vw;
+  margin-right: 20vw;
+}
+#front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mh-1 {
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+#img-2 {
+  width: 27vw;
+  height: 27vw;
+  position: relative;
+  background-size: cover;
+  margin-left: 10vw;
+  background-color: transparent;
+  margin-right: -20vw;
+}
+.h2 {
+  font-size: larger;
+  background-color: transparent;
+}
+#sub-head1 {
+  font-size: 1.1rem;
+  width: 18vw;
+  margin-top: 30px;
+}
+#section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin-left: 0vw;
+  margin-top: 5vw;
+}
+#blob-2 {
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 15vw;
+  /* z-index: 0; */
+  background-color: #ff0000;
+  border-radius: 20vw;
+  filter: drop-shadow(10px 10px 250px #f00)
+    drop-shadow(-10px -10px 250px rgba(255, 0, 0, 0.5));
+  animation: move 4s linear infinite;
+  /* transition: 1s ease-in; */
+}
+@keyframes move {
+  0% {
+    transform: translateX(2vw);
+  }
+  10% {
+    transform: translateX(10vw);
+  }
+  20% {
+    transform: translateX(20vw);
+  }
+  30% {
+    transform: translateX(30vw);
+  }
+  40% {
+    transform: translateX(40vw);
+  }
+  50% {
+    transform: translateX(50vw);
+  }
+  60% {
+    transform: translateX(70vw);
+  }
+}
+#see {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  color: #e50000;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+  padding-right: 8vw;
+  margin-top: 7vw;
+  font-size: 1.08rem;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20vw;
+  height: 20rem;
+  max-width: 100vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  margin-right: 6vw;
+  margin-left: 5vw;
+  border-radius: 1.25rem;
+  background: rgba(217, 217, 217, 0.1);
+  box-shadow: -44.36666px 44.36666px 44.36666px 0px rgba(255, 255, 255, 0.02)
+      inset,
+    44.36666px -44.36666px 44.36666px 0px rgba(165, 165, 165, 0.02) inset;
+  backdrop-filter: blur(102.0433349609375px);
+}
+.boxes:hover {
+  transition: 1s ease-in-out;
+  transform: scale(1.05);
+}
+/* .boxes:last-child {
+  margin-right: 0px;
+} */
+.img-3 {
+  margin-top: 4vw;
+  width: 15vw;
+  height: 12vw;
+  background-color: transparent;
+}
