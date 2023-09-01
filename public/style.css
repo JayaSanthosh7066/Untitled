@@ -390,3 +390,39 @@ strong {
   height: 12vw;
   background-color: transparent;
 }
+#h3 {
+  font-size: 2rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 2vw;
+  z-index: 2;
+}
+.ourte {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 1.25rem;
+  background: rgba(217, 217, 217, 0.1);
+  box-shadow: -44.36666px 44.36666px 44.36666px 0px rgba(255, 255, 255, 0.02)
+      inset,
+    44.36666px -44.36666px 44.36666px 0px rgba(165, 165, 165, 0.02) inset;
+  backdrop-filter: blur(102.0433349609375px);
+  z-index: 1;
+  background-color: transparent;
+}
+#box-33 {
+  display: flex;
+  justify-content: space-around;
+  /* position: absolute; */
+  background-color: transparent;
+  margin-top: 15vw;
+}
+.box-3 {
+  width: 15vw;
+  height: 14vw;
+  border-radius: 200px;
+  /* position: absolute; */
+  background-color: #ff0000;
+  filter: drop-shadow(10px 10px 250px #f00)
+    drop-shadow(-10px -10px 250px rgba(255, 0, 0, 0.5));
+}
