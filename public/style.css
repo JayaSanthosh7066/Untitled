@@ -360,7 +360,7 @@ strong {
 }
 .boxes {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   width: 20vw;
@@ -379,7 +379,7 @@ strong {
 }
 .boxes:hover {
   transition: 1s ease-in-out;
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
 }
 /* .boxes:last-child {
   margin-right: 0px;
@@ -425,8 +425,8 @@ strong {
   /* position: relative; */
   margin-left: 5vw;
   background-color: #ff0000;
-  filter: drop-shadow(10px 10px 250px #f00)
-    drop-shadow(-10px -10px 250px rgba(255, 0, 0, 0.5));
+  filter: drop-shadow(10px 10px 250px rgb(205, 65, 65))
+    drop-shadow(-10px -10px 250px rgba(0, 0, 0, 0.5));
 }
 .box-3:nth-child(2),
 .box-3:nth-child(3) {
@@ -437,4 +437,27 @@ strong {
   justify-content: center;
   width: 100vw;
   background-color: transparent;
+}
+#persophoto {
+  background-color: transparent;
+  width: 10vw;
+  height: 10vw;
+  margin-top: 0px;
+}
+#teaminfo {
+  background-color: transparent;
+  display: flex;
+  /* justify-content: flex-end; */
+  flex-wrap: wrap;
+  margin-top: 2vw;
+}
+.team {
+  background-color: transparent;
+  width: 2vw;
+  height: 3.3vh;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.team:nth-child(3) {
+  width: 1vw;
 }
