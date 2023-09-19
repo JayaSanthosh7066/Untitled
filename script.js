@@ -11,11 +11,17 @@ const transport=nodema.createTransport({
         pass:"jgsbgrshlcoxneqc"
     }
 });
+const li=new mongoose.Schema({
+    name: String,
+    email: String,
+    phone: Number,
+    password: String
+})
 const app=express();
 app.use(express.static('public'));
 app.set('view engine','ejs');
 app.use(bodyparser.urlencoded({extended: true}));
-const list=mongoose.model("detail",li);
+const list=mongoose.model("books",li);
 app.listen("3000",function()
 {
     console.log("server listening on 3000");
